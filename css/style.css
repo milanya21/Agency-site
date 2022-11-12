@@ -206,6 +206,7 @@
      background-color: rgba(0, 0, 0, 0.0001);
      color: #FF2D2D;
      border: 2px solid;
+     margin-top: -11%;
 }
 
 .intro-video {
@@ -236,25 +237,31 @@
      font-weight: 700;
      letter-spacing: 0.4px;
      text-transform: uppercase;
+     margin-top: 0px;
+     margin-bottom: 30px;
 }
 
-.services__about {
+.servises__about {
      font-family: 'Open Sans';
      font-size: 16px;
      line-height: 28px;
      font-weight: 400;
+     margin-top: 0px;
+     margin-bottom: 119px;
 }
 
 .services__items {
      display: flex;
      justify-content: end;
      flex-wrap: wrap;
-     width: 610px;
+     width: 629px;
+
 }
 
 .services__item {
      width: 50%;
      margin-bottom: 53px;
+
 }
 
 .services__item_manag::before {
@@ -265,6 +272,7 @@
      background-repeat: no-repeat;
      background-image: url('../img/ring.svg');
      margin-bottom: 33px;
+     background-size: cover;
 }
 
 .services__item_design::before {
@@ -275,24 +283,27 @@
      background-repeat: no-repeat;
      background-image: url('../img/pen.svg');
      margin-bottom: 33px;
+     background-size: cover;
 }
 
 .services__item_logo::before {
      content: ' ';
      display: block;
-     width: 40px;
-     height: 40px;
+     width: 44px;
+     height: 33px;
      background-repeat: no-repeat;
      background-image: url('../img/diamond.svg');
      margin-bottom: 33px;
+     background-size: cover;
 }
 
 .services__item_anim::before {
      content: ' ';
      display: block;
-     width: 40px;
-     height: 40px;
+     width: 41px;
+     height: 35px;
      background-repeat: no-repeat;
+     background-size: cover;
      background-image: url('../img/car.svg');
      margin-bottom: 33px;
 }
@@ -305,4 +316,93 @@
      font-size: 25px;
      line-height: 0px;
      font-weight: 600;
+     margin-top: 0px;
+     margin-bottom: 57px;
+}
+
+/* features */
+.feature {
+     width: 1249px;
+     margin: 0 auto;
+     padding: 100px 0 65px;
+}
+
+.feature__heading {
+     margin: 0;
+     margin-bottom: 28.5px;
+     font-family: 'Open Sans';
+     font-size: 42px;
+     line-height: 1.2;
+     font-weight: 700;
+     letter-spacing: 0.3px;
+     text-transform: uppercase;
+     text-align: center;
+}
+
+.feature__about {
+     width: 537px;
+     margin: 0 auto;
+     margin-bottom: 34.5px;
+     font-family: 'Open Sans';
+     font-size: 15px;
+     line-height: 1.2;
+     font-weight: 600;
+     text-align: center;
+}
+
+.feature__line {
+     height: 2px;
+     width: 130px;
+     border: 0px;
+     background-color: #FF2D2D;
+}
+
+.feature__header {
+     margin-bottom: 88px;
+}
+
+.filter {
+     display: flex;
+     justify-content: center;
+     margin-bottom: 58px;
+}
+
+.filter__list {
+     margin: 0;
+     padding: 0;
+     list-style: none;
+     display: flex;
+     flex-wrap: wrap;
+     gap: 57px;
+}
+
+.filter__link {
+     font-family: 'Open Sans';
+     font-size: 22px;
+     line-height: 24px;
+     font-weight: 600;
+     letter-spacing: 0.2px;
+     color: black;
+     text-transform: uppercase;
+     text-decoration: none;
+}
+
+.filter__link_active {
+     color: #FF2D2D;
+}
+
+.filter__link:hover {
+     color: #FF2D2D;
+}
+
+.feauter__products {
+     width: 1255px;
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr 1fr;
+     grid-template-rows: 1fr 1fr;
+}
+
+.feauter__photo {
+     object-fit: cover;
+     padding-bottom: 18px;
 }
