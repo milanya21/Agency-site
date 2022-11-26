@@ -132,6 +132,7 @@
      background-color: #FF3F40;
 }
 
+
 /* Main */
 /* Intro */
 .intro-wrapper {
@@ -255,14 +256,12 @@
      justify-content: end;
      flex-wrap: wrap;
      max-width: 750px;
-
 }
 
 .services__item {
      max-width: 300px;
      margin-bottom: 53px;
      margin-right: 20px;
-
 }
 
 .services__item_manag::before {
@@ -665,12 +664,12 @@
      width: 134px;
      height: 2px;
      background: #FF2D2D;
-     margin-bottom: 70px;
 }
 
 
 .feedback__header {
      max-width: 750px;
+     margin-bottom: 70px;
 }
 
 .feedback__body {
@@ -806,7 +805,6 @@
 .feedback__contacts {
      margin-right: auto;
      background-color: #2D2D2D;
-
 }
 
 /* footer */
@@ -853,4 +851,56 @@
 
 .footer__link {
      display: inline-block;
+}
+
+/* responsive */
+@media screen and (max-width: 600px) {
+     .page {
+          display: flex;
+          flex-wrap: wrap;
+     }
+
+     .header-wrapper {
+          display: flex;
+          flex-wrap: wrap;
+          width: 100%;
+          flex-direction: column;
+     }
+
+     .header {
+          display: flex;
+          flex-wrap: wrap;
+          width: 100%;
+          flex-direction: column;
+     }
+
+     .intro-wrapper {
+          display: flex;
+          flex-wrap: wrap;
+          width: 100%;
+          flex-direction: column;
+     }
+
+     .intro {
+          display: flex;
+          flex-wrap: wrap;
+          width: 100%;
+          flex-direction: column;
+     }
+
+     .services {
+          min-height: 500px;
+          display: flex;
+          flex-wrap: wrap;
+     }
+
+     .servises__info {
+          min-width: 500px;
+
+     }
+
+     .services__item {
+          min-width: 500px;
+     }
+
 }
