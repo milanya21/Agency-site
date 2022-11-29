@@ -675,14 +675,21 @@
 }
 
 .feedback__body {
-     max-width: 1199px;
+     /* max-width: 1199px; */
+     width: 100%;
      display: grid;
      align-self: baseline;
-     grid-template-columns: minmax(200px, 730px) minmax(10px, 100px) minmax(200px, 371px);
+     grid-template-columns: minmax(200px, 730px) minmax(10px, 100px) minmax(200px, 371px) minmax(200px, 730px);
      grid-template-rows: minmax(200px, 485px);
      grid-template-areas:
-          'form empty contacts';
+          'form empty contacts black';
 
+}
+
+.feedback__body::after {
+     content: '';
+     grid-area: black;
+     background-color: red;
 }
 
 .feedback__empty {
