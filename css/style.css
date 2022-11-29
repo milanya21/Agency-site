@@ -83,6 +83,10 @@
      /* Legacy iOS */
 }
 
+.page {
+     min-width: 350px;
+}
+
 /* header */
 .header-wrapper {
      padding-top: 29px;
@@ -92,7 +96,6 @@
 .header {
      display: flex;
      justify-content: center;
-     width: 1249px;
      margin: 0 auto;
      background-color: rgba(0, 0, 0, 0.8);
      min-height: 80px;
@@ -137,14 +140,13 @@
 /* Intro */
 .intro-wrapper {
      display: block;
-     width: 100%;
      padding: 102px 0 110px;
      background-color: #F6F2F2;
 }
 
 .intro {
      display: flex;
-     width: 1249px;
+     max-width: 1249px;
      margin: 0 auto;
      justify-content: space-between;
 }
@@ -859,6 +861,7 @@
           display: flex;
           flex-wrap: wrap;
           width: 100%;
+          min-width: 350px;
      }
 
      .header-wrapper {
@@ -890,6 +893,7 @@
           flex-wrap: wrap;
           width: 100%;
           flex-direction: column;
+          align-items: center;
      }
 
      .intro-info {
@@ -899,6 +903,7 @@
           flex-direction: column;
           margin-bottom: 50px;
           align-items: center;
+          padding: 30px;
      }
 
      .intro-heading {
@@ -907,7 +912,7 @@
           width: 100%;
           flex-direction: column;
           align-items: center;
-          font-size: 40px;
+          font-size: 30px;
      }
 
      .intro-spesial {
@@ -916,11 +921,12 @@
           width: 100%;
           flex-direction: column;
           align-items: center;
-          font-size: 40px;
+          font-size: 30px;
      }
 
      .intro-text {
           text-align: center;
+          max-width: 250px;
 
      }
 
@@ -930,6 +936,9 @@
      .intro-video {
           width: 100%;
           object-fit: cover;
+          box-sizing: border-box;
+          border: none;
+          height: auto;
      }
 
 
@@ -937,6 +946,7 @@
           display: flex;
           flex-wrap: wrap;
           width: 100%;
+          padding: 30px;
      }
 
      .servises__info {
@@ -950,6 +960,7 @@
           display: flex;
           flex-wrap: wrap;
           width: 100%;
+          font-size: 30px;
      }
 
      .servises__about {
@@ -964,15 +975,18 @@
           flex-direction: column;
           width: 100%;
           margin: 0;
+          justify-content: center;
      }
 
-     .feature {
 
+
+     .feature {
           display: flex;
           flex-wrap: wrap;
           width: 100%;
           flex-direction: column;
           margin: 0;
+          padding: 30px;
      }
 
      .feature__header {
@@ -984,6 +998,7 @@
           max-width: 800px;
           justify-content: center;
           align-items: center;
+          margin-bottom: 20px;
      }
 
      .feature__heading {
@@ -991,6 +1006,7 @@
           flex-wrap: wrap;
           margin: 0;
           justify-content: center;
+          font-size: 30px;
      }
 
      .feature__about {
@@ -1010,6 +1026,7 @@
 
      .filter__list {
           justify-content: center;
+          margin-bottom: 20px;
      }
 
      .feauter__products {
@@ -1017,6 +1034,86 @@
           flex-wrap: wrap;
           margin: 0;
           width: 100%;
+          justify-content: center;
+          gap: 10px;
+     }
+
+     .team {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          width: 100%;
+          flex-direction: column;
+     }
+
+
+     .team__header {
+          display: flex;
+          flex-wrap: wrap;
+          width: 100%;
+          flex-direction: column;
+          margin-bottom: 50px;
+          align-items: center;
+     }
+
+     .team__members {
+          grid-template-columns: auto;
+          grid-template-rows: auto auto auto;
+          grid-template-areas:
+               'photo'
+               'name'
+               'others'
+     }
+
+     .team__lead-photo {
+          grid-area: photo;
+     }
+
+     .team__lead-name {
+          grid-area: name;
+          display: flex;
+          flex-wrap: wrap;
+          width: 100%;
+          flex-direction: column;
+
+     }
+
+     .team__others {
+          grid-area: others;
+          display: flex;
+          flex-wrap: wrap;
+          width: 100%;
+          flex-direction: column;
+     }
+
+     .team__lead {
+          display: flex;
+          flex-wrap: wrap;
+          width: 100%;
+          flex-direction: column;
+     }
+
+     .team__lead-about {
+          display: flex;
+          flex-wrap: wrap;
+          width: 100%;
+          flex-direction: column;
+     }
+
+     .team__lead-name-links {
+          display: flex;
+          flex-wrap: wrap;
+          width: 100%;
+          flex-direction: column;
+     }
+
+     .team-heading {
+          display: flex;
+          flex-wrap: wrap;
+          width: 100%;
+          flex-direction: column;
+          align-items: center;
+          font-size: 30px;
      }
 
 }
