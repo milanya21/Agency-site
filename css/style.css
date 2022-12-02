@@ -983,6 +983,12 @@
 
 /* responsive */
 @media screen and (max-width: 800px) {
+
+     .site-menu {
+          display: flex;
+          justify-content: center;
+     }
+
      .page {
           display: flex;
           flex-wrap: wrap;
@@ -1487,6 +1493,7 @@
           flex-wrap: wrap;
           width: 100%;
           flex-direction: column;
+          margin-bottom: 0px;
 
      }
 
@@ -1514,7 +1521,7 @@
      }
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 801px) {
      .popup-menu__button {
           display: none;
      }
