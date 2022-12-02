@@ -94,11 +94,16 @@
 }
 
 .header {
+     box-sizing: border-box;
      display: flex;
+     flex-wrap: wrap;
+     align-items: stretch;
      justify-content: center;
+     width: 100%;
+     max-width: 1249px;
      margin: 0 auto;
+     min-height: 89px;
      background-color: rgba(0, 0, 0, 0.8);
-     min-height: 80px;
 }
 
 .menu-list {
@@ -133,6 +138,96 @@
 
 .active-link {
      background-color: #FF3F40;
+}
+
+/* Popup menu */
+.popup-menu__button {
+     z-index: 1;
+     display: flex;
+     padding: 0;
+     min-width: 140px;
+     height: 50px;
+     background-image: url('../img/menu.svg');
+     background-repeat: no-repeat;
+     background-size: 100% 100%;
+     background-color: white;
+}
+
+.popup-menu__button {
+     display: flex;
+}
+
+.popup-menu__list {
+     display: flex;
+}
+
+.menu {
+     border: 0;
+     clip: rect(0 0 0 0);
+     height: 1px;
+     margin: -1px;
+     overflow: hidden;
+     padding: 0;
+     position: absolute;
+     width: 1px;
+}
+
+
+.popup-menu {
+     position: relative;
+     align-self: center;
+     display: flex;
+     justify-content: center;
+}
+
+.popup-menu__list {
+     display: none;
+     position: absolute;
+     bottom: 0;
+     transform: translateY(100%);
+     min-width: 140px;
+     display: flex;
+     flex-direction: column;
+     flex-wrap: wrap;
+     align-items: stretch;
+     list-style: none;
+     padding: 0;
+     margin: 0;
+     background-color: rgba(0, 0, 0, 0.8);
+     transition: visibility, transform 1s, 0.5s ease-in-out;
+}
+
+.hide-popup {
+     display: flex;
+}
+
+
+.popup-menu__item {
+     display: flex;
+     align-items: stretch;
+     justify-content: center;
+     min-height: 89px;
+}
+
+.popup-menu__item:hover {
+     background-color: #ff3f40;
+}
+
+.popup-menu__link {
+     display: flex;
+     align-items: center;
+     padding: 0 30px;
+     color: #e0e0e0;
+     font-size: 14px;
+     font-weight: bold;
+     text-decoration: none;
+     text-transform: uppercase;
+}
+
+@media screen and (min-width: 800px) {
+     .popup-menu {
+          display: none;
+     }
 }
 
 
@@ -902,6 +997,10 @@
           flex-wrap: wrap;
           width: 100%;
           flex-direction: column;
+     }
+
+     .menu-list {
+          display: none;
      }
 
 
