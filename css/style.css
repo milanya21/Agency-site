@@ -514,7 +514,7 @@
 
 /* team */
 .team {
-     width: 1249px;
+     max-width: 1249px;
      margin: 0 auto;
      padding: 65px 0 65px;
      text-align: left;
