@@ -282,7 +282,7 @@
      width: 227px;
      font-weight: 700;
      line-height: 34px;
-     font-weight: 144px;
+
 
 }
 
@@ -504,7 +504,7 @@
      display: grid;
      grid-template-columns: 1fr 1fr 1fr 1fr;
      grid-template-rows: 1fr 1fr;
-     gap: 18px;
+     gap: 11px;
 }
 
 .feauter__photo {
@@ -539,7 +539,6 @@
      margin: 0;
      line-height: 28px;
      margin-bottom: 42px;
-     width: 457px;
      height: 73px;
 }
 
@@ -577,9 +576,6 @@
 
 .team__lead-about {
      max-width: 663px;
-     height: 45px;
-     left: 484px;
-     top: 2860.52px;
      font-family: 'Open Sans';
      font-size: 16px;
      line-height: 28px;
@@ -588,8 +584,7 @@
 
 .team__lead-name {
      margin-left: 76px;
-     margin-top: 30px;
-     margin-bottom: 64px;
+
      grid-area: name;
      display: flex;
      flex-direction: column;
@@ -621,6 +616,7 @@
 }
 
 .team__others {
+     margin-top: 15px;
      margin-left: 76px;
      gap: 19px;
      grid-area: others;
@@ -679,7 +675,7 @@
      color: white;
      font-family: 'Open Sans';
      font-size: 42px;
-     line-height: 24px;
+     line-height: 1;
      font-weight: 700;
      max-width: 1126px;
      margin-bottom: 27px;
@@ -877,7 +873,7 @@
      font-family: 'Open Sans';
      font-size: 16px;
      line-height: 28px;
-     font-style: 400;
+     font-weight: 400;
 }
 
 .feedback__button {
@@ -1195,6 +1191,8 @@
           flex-direction: column;
           margin-bottom: 50px;
           align-items: center;
+          padding: 30px;
+          box-sizing: border-box;
      }
 
      .team__members {
@@ -1216,6 +1214,9 @@
           flex-wrap: wrap;
           width: 100%;
           flex-direction: column;
+          margin-left: 0px;
+          padding: 30px;
+          box-sizing: border-box;
 
      }
 
@@ -1299,6 +1300,7 @@
           width: 100%;
           flex-direction: column;
           align-items: center;
+          margin-top: 0px;
      }
 
      .feedback__header {
@@ -1311,6 +1313,8 @@
           font-size: 30px;
           padding-left: 0px;
           align-items: center;
+          padding: 30px;
+          box-sizing: border-box;
 
      }
 
@@ -1424,20 +1428,6 @@
 
      }
 
-     .team__lead-photo {
-          align-self: center;
-     }
-
-
-
-     .team__lead-name {
-          display: flex;
-          flex-wrap: wrap;
-          width: 100%;
-          flex-direction: column;
-          margin: 0px;
-
-     }
 
      .team__others {
           grid-area: others;
