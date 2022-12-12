@@ -527,7 +527,7 @@ body {
      color: #FF2D2D;
 }
 
-.feauter__products {
+.feature__products {
      max-width: 1249px;
      display: grid;
      grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -535,7 +535,7 @@ body {
      gap: 11px;
 }
 
-.feauter__photo {
+.feauture__photo {
      object-fit: cover;
 
 }
@@ -1030,15 +1030,30 @@ body {
           flex-wrap: wrap;
      }
 
-     .feauter__products {
+     .feature__products {
           grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
           grid-template-rows: auto;
+          width: 100%;
+
      }
+
+     .feature__photo {
+          margin: 0 auto;
+     }
+
+     .team__members {
+          grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+          grid-template-rows: auto;
+          width: 100%;
+     }
+
+
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 900px) {
      .container {
           max-width: 620px;
+          padding: 20px;
      }
 
      .intro {
@@ -1047,9 +1062,10 @@ body {
           gap: 20px;
      }
 
-
-
 }
+
+@media screen and (max-width: 540px) {}
+
 
 @media screen and (min-width: 801px) {
      .popup-menu__button {
