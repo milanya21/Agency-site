@@ -83,6 +83,17 @@
      /* Legacy iOS */
 }
 
+html {
+     box-sizing: border-box;
+     height: 100%;
+}
+
+*,
+*::after,
+*::before {
+     box-sizing: inherit;
+}
+
 .page {
      min-width: 350px;
 }
@@ -990,6 +1001,7 @@
           display: flex;
           flex-wrap: wrap;
           justify-content: center;
+          text-align: center;
      }
 
 
@@ -998,6 +1010,7 @@
           flex-wrap: wrap;
           justify-content: center;
           box-sizing: border-box;
+          margin-bottom: 20px;
      }
 
      .feature__products {
@@ -1015,6 +1028,8 @@
 
      .servises__info {
           margin: 0 auto;
+          padding-bottom: 20px;
+          text-align: center;
      }
 
      .services__items {
@@ -1037,6 +1052,7 @@
           flex-direction: column;
           margin-bottom: 50px;
           align-items: center;
+          text-align: center;
      }
 
      .team__members {
@@ -1087,6 +1103,10 @@
           align-items: center;
      }
 
+     .team__lead-name {
+          margin: 0 auto;
+     }
+
      .team-heading {
           display: flex;
           flex-wrap: wrap;
@@ -1099,6 +1119,7 @@
      .subscribe__heading {
           line-height: 50px;
           padding: 70px;
+          text-align: center;
      }
 
      .feedback__input {
@@ -1395,14 +1416,6 @@
 
      }
 
-     .team__others {
-          grid-area: others;
-          display: flex;
-          flex-wrap: wrap;
-          width: 100%;
-          flex-direction: column;
-          justify-content: center;
-     }
 
      .team__other {
           align-self: center;
