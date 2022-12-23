@@ -822,11 +822,10 @@ html {
 
 
 .feedback__heading {
-     max-width: 329px;
      font-family: 'Open Sans';
      font-weight: bold;
      font-size: 42px;
-     line-height: 0px;
+     line-height: 1.2;
      letter-spacing: 0.4px;
      text-transform: uppercase;
      color: #000000;
@@ -857,7 +856,7 @@ html {
 }
 
 .feedback__user {
-     min-width: 339px;
+     min-width: 47%;
      box-sizing: border-box;
      height: 69px;
      background-color: rgba(0, 0, 0, 0.1);
@@ -1042,6 +1041,7 @@ html {
           justify-content: center;
           width: 100%;
           flex-direction: column;
+          align-items: flex-start;
      }
 
 
@@ -1080,7 +1080,10 @@ html {
      }
 
      .team__lead-photo {
-          margin-bottom: 20px
+          margin-bottom: 20px;
+          height: auto;
+          width: 60%;
+          align-self: center;
      }
 
      .team__about {
@@ -1402,6 +1405,7 @@ html {
      .team__lead-photo {
           grid-area: photo;
 
+
      }
 
      .team__lead-name {
@@ -1417,9 +1421,6 @@ html {
      }
 
 
-     .team__other {
-          align-self: center;
-     }
 
      .team__lead {
           display: flex;
