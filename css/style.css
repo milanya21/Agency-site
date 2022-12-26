@@ -992,9 +992,6 @@ html {
 
 @media screen and (max-width: 1200px) {
 
-     .page {
-          padding: 20px;
-     }
 
      .intro {
           display: flex;
@@ -1224,6 +1221,7 @@ html {
           justify-content: center;
           width: 100%;
           flex-direction: column;
+          padding: 0;
      }
 
      .intro {
@@ -1250,7 +1248,8 @@ html {
           width: 100%;
           flex-direction: column;
           align-items: center;
-          font-size: 30px;
+          font-size: 17px;
+          line-height: 30px;
      }
 
      .intro-spesial {
@@ -1259,17 +1258,13 @@ html {
           width: 100%;
           flex-direction: column;
           align-items: center;
-          font-size: 30px;
+          font-size: 17px;
      }
 
      .intro-text {
-          text-align: center;
-          max-width: 250px;
-
+          text-align: justify;
+          width: 90%;
      }
-
-
-
 
      .intro-video {
           width: 100%;
@@ -1288,6 +1283,10 @@ html {
           box-sizing: border-box;
      }
 
+     .services__title {
+          font-size: 17px;
+     }
+
      .servises__info {
           display: flex;
           flex-wrap: wrap;
@@ -1299,20 +1298,23 @@ html {
           display: flex;
           flex-wrap: wrap;
           width: 100%;
-          font-size: 30px;
+          font-size: 17px;
      }
 
      .servises__about {
           display: flex;
           flex-wrap: wrap;
           width: 100%;
+          text-align: justify;
      }
 
      .services__items {
           justify-content: center;
      }
 
-
+     .page__inner_dark {
+          margin-top: 10px;
+     }
 
      .feature {
           display: flex;
@@ -1341,7 +1343,9 @@ html {
           flex-wrap: wrap;
           margin: 0;
           justify-content: center;
-          font-size: 30px;
+          font-size: 17px;
+          letter-spacing: 1.2;
+          padding-bottom: 15px;
      }
 
      .feature__about {
@@ -1349,6 +1353,7 @@ html {
           flex-wrap: wrap;
           margin: 0;
           width: 100%;
+          text-align: justify;
      }
 
 
@@ -1362,6 +1367,7 @@ html {
      .filter__list {
           justify-content: center;
           margin-bottom: 20px;
+          gap: 10px;
      }
 
      .feature__products {
@@ -1379,6 +1385,7 @@ html {
           justify-content: center;
           width: 100%;
           flex-direction: column;
+          padding: 0;
      }
 
 
@@ -1392,6 +1399,11 @@ html {
           padding: 30px;
           box-sizing: border-box;
      }
+
+     .team__about {
+          text-align: justify;
+     }
+
 
      .team__members {
           grid-template-columns: auto;
@@ -1420,7 +1432,9 @@ html {
 
      }
 
-
+     .team__lead-about {
+          text-align: justify;
+     }
 
      .team__lead {
           display: flex;
@@ -1440,7 +1454,6 @@ html {
           display: flex;
           flex-wrap: wrap;
           width: 100%;
-          flex-direction: column;
           align-items: center;
      }
 
@@ -1470,6 +1483,7 @@ html {
           line-height: 50px;
           font-size: 30px;
           max-width: 300px;
+          padding: 0;
      }
 
      .subscribe__about {
@@ -1480,7 +1494,11 @@ html {
      }
 
      .subscribe__input {
-          width: 335px;
+          width: 90%;
+     }
+
+     .subscribe__button {
+          width: 90%;
      }
 
      .subscribe__form {
@@ -1518,16 +1536,16 @@ html {
           width: 100%;
           flex-direction: column;
           align-items: center;
-          font-size: 30px;
-          margin-top: 110px;
+          font-size: 17px;
           text-align: center;
+          margin: 0;
      }
 
      .feedback__about {
           display: flex;
           flex-wrap: wrap;
           width: 100%;
-          text-align: center;
+          text-align: justify;
      }
 
      .feedback__line {
